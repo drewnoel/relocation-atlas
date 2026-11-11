@@ -1,0 +1,9 @@
+cities/*/geocache.json
+cities/*/bundle.json
+exports/
+__pycache__/
+.vercel
+# your own city folders stay local unless you choose to commit them
+cities/*
+!cities/nyc-demo/
+.vercel

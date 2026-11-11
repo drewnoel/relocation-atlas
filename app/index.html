@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Relocation Atlas</title>
+<meta name="description" content="Pick where to live by commute and budget, then get your daily spots, weekly explorations and every layer that matters, as a map you can keep.">
+<link rel="stylesheet" href="style.css">
+<style>html{-webkit-text-size-adjust:100%}body{margin:0}[hidden]{display:none!important}*{box-sizing:border-box}</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="hero">
+      <span class="kick" id="kick">Relocation Atlas</span>
+      <h1 id="title">Loading…</h1>
+      <p class="sub" id="sub"></p>
+    </div>
+    <div class="tools">
+      <button class="rbtn" id="exJson">Save bundle (.json)</button>
+      <button class="rbtn" id="exKml">Google Earth (.kml)</button>
+      <button class="rbtn" id="exCsv">My Maps (.csv)</button>
+      <label class="rbtn" for="imp" style="cursor:pointer">Open a bundle…</label><input type="file" id="imp" accept=".json,application/json" hidden>
+    </div>
+  </header>
+
+  <div class="homesel" id="homesel" role="group" aria-label="Home base"><span class="lbl">Home base</span></div>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" id="tab-options" aria-selected="true">1 · Where to live</button>
+    <button class="tab" role="tab" id="tab-daily" aria-selected="false">2 · Daily life</button>
+    <button class="tab" role="tab" id="tab-explore" aria-selected="false">3 · Explore</button>
+  </div>
+
+  <section id="optionsSec" class="week">
+    <p class="sub" id="optIntro"></p>
+    <div class="opts" id="opts"></div>
+  </section>
+
+  <section id="topSec" class="week" hidden>
+    <h2 class="wkh" id="topH"></h2>
+    <div class="top"><div class="card"><ol id="topList"></ol></div><div class="card" id="topSide"></div></div>
+  </section>
+
+  <div class="chips" id="chips" role="group" aria-label="Layers"></div>
+  <div class="routes" id="routes" role="group" aria-label="Routes"><span class="lbl">Flythroughs</span></div>
+  <div class="main">
+    <div class="mapbox"><svg id="map" role="img" aria-label="Map of the home base, routes and places"></svg>
+      <div class="views"><button class="vbtn" data-v="near">Near home</button><button class="vbtn" data-v="all">Neighborhood</button><button class="vbtn" data-v="city">Citywide</button></div></div>
+    <div class="side">
+      <div class="card player" id="player" hidden></div>
+      <div class="card" id="detail" aria-live="polite"></div>
+      <div class="list" id="list"></div>
+    </div>
+  </div>
+
+  <section class="week" id="guides" hidden>
+    <h2 class="wkh">Linked guides (kept fresh by their editors)</h2>
+    <div class="guides" id="guideList"></div>
+  </section>
+
+  <div class="drop" id="drop">Drop a bundle file anywhere on this page to open it. Bundles are made by the <a href="https://github.com/drewnoel/relocation-atlas">relocation-atlas</a> skill in your own Claude Code, so your profile never touches this site.</div>
+  <p class="foot" id="foot"></p>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

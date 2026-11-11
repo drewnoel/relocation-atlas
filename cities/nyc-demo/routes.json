@@ -1,0 +1,374 @@
+{
+ "_doc": "Featured routes. '@home' resolves to each option's location; 'options' limits a route to the neighborhoods where it makes sense.",
+ "routes": [
+  {
+   "id": "park",
+   "title": "Up to Central Park",
+   "when": "Weekend AM \u00b7 CP loop start",
+   "blurb": "C train from 23rd & 8th straight up to 59 St\u2013Columbus Circle, then in at Merchants' Gate.",
+   "dest": "Central Park (Merchants' Gate)",
+   "gm": [
+    "@home",
+    "Merchants' Gate, Central Park, New York, NY",
+    "transit"
+   ],
+   "legs": [
+    {
+     "mode": "walk",
+     "from": "@home",
+     "to": [
+      40.7454,
+      -73.9986
+     ],
+     "label": "Walk to 23 St (C/E)"
+    },
+    {
+     "mode": "subway",
+     "line": "C",
+     "color": "#0039A6",
+     "label": "C uptown, 4 stops",
+     "stops": [
+      [
+       "23 St",
+       40.7454,
+       -73.9986
+      ],
+      [
+       "34 St\u2013Penn Station",
+       40.7523,
+       -73.9932
+      ],
+      [
+       "42 St\u2013Port Authority",
+       40.7573,
+       -73.9898
+      ],
+      [
+       "50 St",
+       40.7622,
+       -73.9859
+      ],
+      [
+       "59 St\u2013Columbus Circle",
+       40.7681,
+       -73.9819
+      ]
+     ]
+    },
+    {
+     "mode": "hop",
+     "from": [
+      40.7681,
+      -73.9819
+     ],
+     "to": [
+      40.7699,
+      -73.9786
+     ],
+     "label": "In at Merchants' Gate"
+    }
+   ],
+   "options": [
+    "chelsea",
+    "gramercy"
+   ]
+  },
+  {
+   "id": "brooklyn",
+   "title": "Brooklyn for house music",
+   "when": "Sun \u00b7 afternoon sets",
+   "blurb": "F train from 23rd & 6th to Bergen St, then a short walk to the venue on Butler St.",
+   "caveat": "Weekend service changes are common on the F. Check live directions first.",
+   "dest": "Public Records",
+   "gm": [
+    "@home",
+    "233 Butler St, Brooklyn, NY 11217",
+    "transit"
+   ],
+   "legs": [
+    {
+     "mode": "walk",
+     "from": "@home",
+     "to": [
+      40.7429,
+      -73.9928
+     ],
+     "label": "Walk to 23 St (F/M)"
+    },
+    {
+     "mode": "subway",
+     "line": "F",
+     "color": "#FF6319",
+     "label": "F downtown to Brooklyn, 9 stops",
+     "stops": [
+      [
+       "23 St",
+       40.7429,
+       -73.9928
+      ],
+      [
+       "14 St",
+       40.7382,
+       -73.9962
+      ],
+      [
+       "W 4 St",
+       40.7322,
+       -74.0003
+      ],
+      [
+       "Broadway\u2013Lafayette",
+       40.7253,
+       -73.9962
+      ],
+      [
+       "2 Av",
+       40.7232,
+       -73.9897
+      ],
+      [
+       "Delancey St",
+       40.7186,
+       -73.9881
+      ],
+      [
+       "East Broadway",
+       40.7137,
+       -73.99
+      ],
+      [
+       "York St",
+       40.7014,
+       -73.9868
+      ],
+      [
+       "Jay St\u2013MetroTech",
+       40.6922,
+       -73.9873
+      ],
+      [
+       "Bergen St",
+       40.6861,
+       -73.9908
+      ]
+     ]
+    },
+    {
+     "mode": "walk",
+     "from": [
+      40.6861,
+      -73.9908
+     ],
+     "to": [
+      40.6821674,
+      -73.9863886
+     ],
+     "label": "Walk to Public Records"
+    }
+   ],
+   "options": [
+    "chelsea",
+    "gramercy"
+   ]
+  },
+  {
+   "id": "listening",
+   "title": "Downtown listening room",
+   "when": "Weeknight \u00b7 by reservation",
+   "blurb": "C/E two stops to W 4 St, then a short walk to Tokyo Record Bar on MacDougal: 12 seats, custom hi-fi, set menu.",
+   "caveat": "Reservations required.",
+   "dest": "Tokyo Record Bar",
+   "gm": [
+    "@home",
+    "127 MacDougal St, New York, NY 10012",
+    "transit"
+   ],
+   "legs": [
+    {
+     "mode": "walk",
+     "from": "@home",
+     "to": [
+      40.7454,
+      -73.9986
+     ],
+     "label": "Walk to 23 St (C/E)"
+    },
+    {
+     "mode": "subway",
+     "line": "E",
+     "color": "#0039A6",
+     "label": "C/E downtown, 2 stops",
+     "stops": [
+      [
+       "23 St",
+       40.7454,
+       -73.9986
+      ],
+      [
+       "14 St",
+       40.7404,
+       -74.0021
+      ],
+      [
+       "W 4 St\u2013Washington Sq",
+       40.7322,
+       -74.0003
+      ]
+     ]
+    },
+    {
+     "mode": "walk",
+     "from": [
+      40.7322,
+      -74.0003
+     ],
+     "to": [
+      40.7306295,
+      -74.0001518
+     ],
+     "label": "Walk down to MacDougal below W 3rd"
+    }
+   ],
+   "options": [
+    "chelsea",
+    "gramercy"
+   ]
+  },
+  {
+   "id": "saturday-hy",
+   "title": "Saturday: High Line walk",
+   "when": "Sat AM \u00b7 High Line opens 7a",
+   "blurb": "Up the stairs at W 23rd St, north on the High Line to the 30th St spur, then into Hudson Yards.",
+   "caveat": "",
+   "dest": "Hudson Yards",
+   "gm": [
+    "@home",
+    "Hudson Yards, New York, NY",
+    "walking"
+   ],
+   "legs": [
+    {
+     "mode": "walk",
+     "from": "@home",
+     "to": [
+      40.7479,
+      -74.0049
+     ],
+     "label": "Walk to the High Line at W 23rd St"
+    },
+    {
+     "mode": "highline",
+     "from": [
+      40.7479,
+      -74.0049
+     ],
+     "to": [
+      40.7528,
+      -74.0021
+     ],
+     "label": "High Line north to 30th St"
+    },
+    {
+     "mode": "hop",
+     "from": [
+      40.7528,
+      -74.0021
+     ],
+     "to": [
+      40.754,
+      -74.0015
+     ],
+     "label": "Off at the 30th St spur"
+    }
+   ],
+   "options": [
+    "chelsea",
+    "gramercy"
+   ]
+  },
+  {
+   "id": "greenway",
+   "title": "Greenway easy run",
+   "when": "Sun AM \u00b7 about 3 miles",
+   "blurb": "Out to the river at Chelsea Piers, north on the Hudson River Greenway to W 34th, then back. About 3 miles door to door.",
+   "dest": "Hudson River Greenway",
+   "gm": [
+    "@home",
+    "Hudson River Greenway, New York, NY",
+    "walking"
+   ],
+   "legs": [
+    {
+     "mode": "walk",
+     "from": "@home",
+     "to": [
+      40.7484,
+      -74.0063
+     ],
+     "label": "Walk to 11th Ave & W 23rd"
+    },
+    {
+     "mode": "hop",
+     "from": [
+      40.7484,
+      -74.0063
+     ],
+     "to": [
+      40.748,
+      -74.0087
+     ],
+     "label": "Cross to the river"
+    },
+    {
+     "mode": "greenway",
+     "from": [
+      40.748,
+      -74.0087
+     ],
+     "to": [
+      40.7578,
+      -74.0035
+     ],
+     "label": "Run north to W 34th"
+    },
+    {
+     "mode": "greenway",
+     "from": [
+      40.7578,
+      -74.0035
+     ],
+     "to": [
+      40.748,
+      -74.0087
+     ],
+     "label": "Run back south"
+    },
+    {
+     "mode": "hop",
+     "from": [
+      40.748,
+      -74.0087
+     ],
+     "to": [
+      40.7484,
+      -74.0063
+     ],
+     "label": "Cross back"
+    },
+    {
+     "mode": "walk",
+     "from": [
+      40.7484,
+      -74.0063
+     ],
+     "to": "@home",
+     "label": "Cool-down walk home"
+    }
+   ],
+   "options": [
+    "chelsea",
+    "gramercy"
+   ]
+  }
+ ]
+}

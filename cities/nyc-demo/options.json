@@ -1,0 +1,35 @@
+{
+ "_doc": "Candidate neighborhoods. Rent figures are ILLUSTRATIVE one-bedroom ranges for the demo; the skill researches live listings for real use.",
+ "candidates": [
+  {
+   "id": "chelsea",
+   "name": "Chelsea",
+   "lat": 40.7436,
+   "lon": -73.9953,
+   "rent_low": 4300,
+   "rent_high": 5200,
+   "vibe": "Walk to work, High Line and the river on your doorstep, galleries on Thursdays.",
+   "rent_illustrative": true
+  },
+  {
+   "id": "gramercy",
+   "name": "Gramercy / Kips Bay",
+   "lat": 40.7383,
+   "lon": -73.9832,
+   "rent_low": 3900,
+   "rent_high": 4700,
+   "vibe": "Quiet residential blocks, ten minutes on foot to Flatiron, farther from the river.",
+   "rent_illustrative": true
+  },
+  {
+   "id": "boerum-hill",
+   "name": "Boerum Hill, Brooklyn",
+   "lat": 40.6866,
+   "lon": -73.9853,
+   "rent_low": 3600,
+   "rent_high": 4400,
+   "vibe": "Brownstone streets and more space for the money, with a subway ride to work.",
+   "rent_illustrative": true
+  }
+ ]
+}

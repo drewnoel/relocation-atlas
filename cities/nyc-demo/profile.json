@@ -1,0 +1,55 @@
+{
+ "_doc": "Demo persona. Everything here is invented for illustration. Your own profile stays on your machine.",
+ "persona": "Sam, a product lead moving to New York for a hybrid job in Flatiron",
+ "household": "1 adult",
+ "budget_monthly_rent": 4600,
+ "value_of_time_per_hour": 45,
+ "anchors": [
+  {
+   "id": "office",
+   "name": "Office (Flatiron)",
+   "lat": 40.7404,
+   "lon": -73.9896,
+   "per_week": 4
+  },
+  {
+   "id": "gym",
+   "name": "Gym (Flatiron)",
+   "lat": 40.7412,
+   "lon": -73.9884,
+   "per_week": 3
+  },
+  {
+   "id": "run",
+   "name": "Hudson River Greenway at Chelsea Piers",
+   "lat": 40.748,
+   "lon": -74.0087,
+   "per_week": 2
+  },
+  {
+   "id": "friends",
+   "name": "Friends in the West Village",
+   "lat": 40.7336,
+   "lon": -74.0027,
+   "per_week": 1
+  }
+ ],
+ "interests": {
+  "coffee": 1.0,
+  "fitness": 1.0,
+  "groceries": 0.9,
+  "transit": 0.5,
+  "outdoors": 0.9,
+  "services": 0.5,
+  "health": 0.4,
+  "cowork": 0.6,
+  "music": 0.9,
+  "views": 0.7,
+  "zero-proof": 0.8,
+  "nightlife": 0.6,
+  "culture": 0.8,
+  "social": 0.7,
+  "career": 0.4
+ },
+ "exclude_terms": []
+}

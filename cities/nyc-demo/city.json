@@ -1,0 +1,28 @@
+{
+  "slug": "nyc-demo",
+  "name": "New York City",
+  "subtitle": "Demo persona: product lead with a Flatiron office, comparing three neighborhoods",
+  "projection_origin": [40.763, -74.016],
+  "detail_bbox": [40.726, -74.016, 40.763, -73.972],
+  "bounds": [40.49, -74.27, 40.92, -73.68],
+  "special_paths": {"highline": "High Line", "greenway": "Hudson River Greenway"},
+  "transit": {"label": "Subway", "monthly_pass": 132, "wait_min": 4, "speed_m_per_min": 500, "station_max_walk_m": 1200},
+  "street_labels": [["10th Avenue","10th Ave",40.7490],["8th Avenue","8th Ave",40.7425],["7th Avenue","7th Ave",40.7395],["6th Avenue","6th Ave",40.7375],["5th Avenue","5th Ave",40.7362],["West 23rd Street","W 23rd St",null],["West 14th Street","W 14th St",null],["Broadway","Broadway",40.7330]],
+  "label_lon_for_streets": -73.999,
+  "layer_colors": {
+    "Transit":"#0039A6","Coffee":"#996633","Gym & Wellness":"#00933C","Essentials · Daily":"#FF6319","Essentials · Upkeep":"#B933AD",
+    "Essentials · Health & Errands":"#C99A00","Run & Ride":"#6CBE45","Weeknight Social":"#8E5DB8","Dance & Day Parties":"#E2477A",
+    "Culture & Dining":"#0E8C8C","Clubs & Nightlife":"#808183","Work & Study Spaces (Top 25)":"#6B7A2E",
+    "Rooftops & Views (Top 25)":"#D4A017","Cocktail Bars (Top 50)":"#A3324A","Zero-Proof & Refreshers (Top 25)":"#2BA3A0",
+    "Tech Startups (Top 50)":"#7A4FD6","Public Tech (Top 20)":"#1F6F8B","NYC HQs & Legacy Firms (Top 25)":"#C2571A","Architecture Firms (Top 10)":"#3D6FB6"
+  },
+  "guides": [
+    ["Casual eats","https://www.timeout.com/newyork/restaurants/the-50-best-cheap-eats-in-nyc-map","Time Out's 50 best cheap eats, mapped across the five boroughs"],
+    ["Essential restaurants","https://ny.eater.com/maps/best-new-york-restaurants-38-map","Eater NY's Essential 38, updated quarterly"],
+    ["Historic markers","https://www.hmdb.org/","Historical Marker Database: every marker with its inscription"],
+    ["Landmarks map","https://www.nyc.gov/site/lpc/designations/maps.page","NYC Landmarks Preservation Commission districts and landmarks"],
+    ["Skyscraper ranking","https://www.skyscrapercenter.com/city/new-york-city","CTBUH Skyscraper Center: every tower ranked by height"],
+    ["Cocktail bar rankings","https://www.worlds50bestbars.com/northamerica","North America's 50 Best Bars"],
+    ["Rent data","https://streeteasy.com/blog/data-dashboard/","StreetEasy's rent dashboard by neighborhood (check before you sign)"]
+  ]
+}
